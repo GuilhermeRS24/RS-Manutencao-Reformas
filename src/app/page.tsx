@@ -1,4 +1,7 @@
-//import Image from "next/image";
+
+import { Header } from "@/components/ui/header";
+import { Icons, Alvenaria, Eletrica, Encanamento, Drywall, Ar, Reparos,  } from "@/components/ui/icon";
+import { Secao } from "@/components/ui/section";
 
 export default function Home() {
 
@@ -9,8 +12,8 @@ export default function Home() {
        href="#menu" className="fixed bottom-4 right-4 bg-blue-900 text-white px-4 py-2 rounded hover:bg-gray-900 transition">↑ Início 
       </a>
 
-      <div //Cabeçalho
-        className="relative bg-blue-800 text-green-50 rounded w-335 h-35 flex items-center justify-evenly">
+      <Header //Cabeçalho
+      >
         <img src="/imagens/logo.png" alt="Logo da empresa" className="
           w-30 h-auto absolute left-3
         "/>
@@ -18,30 +21,32 @@ export default function Home() {
           <h1 className="text-4xl">RS Manutenção e Reformas</h1>
           <p className="text-xl">Contatos: 41 9890-4364 | Email:rs.ManutençãoReformas | Instagram: @RS_ManutençãoReformas</p>
         </div>
-      </div>
+      </Header>
 
       <h3 className="font-semibold mt-15 mb-2 text-3xl">Trabalhamos com:</h3>
-      <div //Icons
-        className="bg-blue-800 h-40 min-w-230 rounded p-2 text-xl text-white flex items-center justify-around">
-        <a href="#alvenaria"  className="flex flex-col items-center  hover:h-22"><img src="/imagens/alvenaria_icon.png"/><h2>Alvenaria</h2></a>
+      <Icons //Icons
+        >
+        
+        <Alvenaria href="#alvenaria"/>
 
-        <a href="#eletrica" className="flex flex-col items-center  hover:h-22"><img src="/imagens/eletrica_icon.png"/><h2>Elétrica</h2></a>
+        <Eletrica href="#eletrica"/>
 
-        <a href="#encanamento" className="flex flex-col items-center  hover:h-22"><img src="/imagens/encanamento_icon.png"/><h2>Encanamento</h2></a>
+        <Encanamento href="#encanamento"/>
 
-        <a href="#drywall" className="flex flex-col items-center  hover:h-22"><img src="/imagens/drywall_icon.png"/>Drywall</a>
+        <Drywall href="#drywall"/>
 
-        <a href="#ar" className="flex flex-col items-center  hover:h-22"><img src="/imagens/ar_icon.png"/>Ar-Condicionado</a>
+        <Ar href="#ar"/>
 
-        <a href="#reparos" className="flex flex-col items-center  hover:h-22"><img src="/imagens/reparos_icon.png"/>Reparos em Geral</a>
+        <Reparos href="#reparos"/>
 
-      </div>
+      </Icons>
 
       <div //Frase
       className="font-bold text-4xl flex flex-col items-center m-15">
         <h2>Precisando de ajuda com a reforma de sua residência?</h2>
         <h2 className="text-blue-700">Chama que eu resolvo</h2>
       </div>
+
       <a //Botão de contato
        href="https://wa.me/5547999746021?text=Estou interessado na Alvenaria" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white text-2xl w-90 h-13 rounded flex justify-center items-center font-semibold hover:bg-blue-800 hover:text-gray-300 hover:w-88">Entrar em Contato
       </a>
@@ -75,7 +80,7 @@ export default function Home() {
       <div className="text-5xl flex flex-col items-center">
         
         <h1 className="m-10">Alvenaria</h1>
-        <section id="alvenaria" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="alvenaria" >
           <h3 className="text-4xl mb-10">Fazemos:</h3>
             <h1 className="font-semibold">Construção de Paredes</h1>
             <div>
@@ -115,10 +120,10 @@ export default function Home() {
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
         
         <h1 className="m-10">Elétrica</h1>
-        <section id="eletrica" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="eletrica" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
           
           <h3 className="text-4xl mb-10">Fazemos:</h3>
             <h1 className="font-semibold">Planejamento Elétrico</h1>
@@ -183,10 +188,10 @@ export default function Home() {
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
 
         <h1 className="m-10">Encanamento</h1>
-        <section id="encanamento" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="encanamento" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3 >
 
             <h1 className="font-semibold">Planejamento hidráulico</h1>
@@ -271,10 +276,10 @@ export default function Home() {
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
 
         <h1 className="m-10">Drywall</h1>
-        <section id="drywall"
+        <Secao id="drywall"
         className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
 
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3>
@@ -339,10 +344,10 @@ export default function Home() {
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
 
         <h1 className="m-10">Ar-Condicionado</h1>
-        <section id="ar" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="ar" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
           
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3>
 
@@ -404,17 +409,17 @@ export default function Home() {
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
 
         <h1 className="m-10">Reparos em Geral</h1>
-        <section id="reparos" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="reparos" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
 
           <a href="https://wa.me/5547999746021?text=Olá, estou interessado em fazer um orçamento sobre Reparos em Geral" target="_blank" rel="noopener noreferrer"
             className="w-80 h-12 border hover:bg-blue-600 text-3xl font-medium rounded flex items-center justify-center m-5"
             >
              Solicitar orçamento
             </a>
-        </section>
+        </Secao>
       </div>
     </div>
   );
