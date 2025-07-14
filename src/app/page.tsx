@@ -1,4 +1,5 @@
 
+import { BotaoTelefone } from "@/components/ui/button";
 import { Header } from "@/components/ui/header";
 import { Icons, Alvenaria, Eletrica, Encanamento, Drywall, Ar, Reparos,  } from "@/components/ui/icon";
 import { Secao } from "@/components/ui/section";
@@ -47,9 +48,7 @@ export default function Home() {
         <h2 className="text-blue-700">Chama que eu resolvo</h2>
       </div>
 
-      <a //Botão de contato
-       href="https://wa.me/5547999746021?text=Estou interessado na Alvenaria" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white text-2xl w-90 h-13 rounded flex justify-center items-center font-semibold hover:bg-blue-800 hover:text-gray-300 hover:w-88">Entrar em Contato
-      </a>
+      <BotaoTelefone/>
 
       <div //Forma de trabalho
       className="m-20 flex flex-col space-y-2 text-xl">
@@ -123,7 +122,7 @@ export default function Home() {
         </Secao>
         
         <h1 className="m-10">Elétrica</h1>
-        <Secao id="eletrica" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="eletrica">
           
           <h3 className="text-4xl mb-10">Fazemos:</h3>
             <h1 className="font-semibold">Planejamento Elétrico</h1>
@@ -191,7 +190,7 @@ export default function Home() {
         </Secao>
 
         <h1 className="m-10">Encanamento</h1>
-        <Secao id="encanamento" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="encanamento">
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3 >
 
             <h1 className="font-semibold">Planejamento hidráulico</h1>
@@ -280,7 +279,7 @@ export default function Home() {
 
         <h1 className="m-10">Drywall</h1>
         <Secao id="drywall"
-        className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+      >
 
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3>
 
@@ -347,7 +346,7 @@ export default function Home() {
         </Secao>
 
         <h1 className="m-10">Ar-Condicionado</h1>
-        <Secao id="ar" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="ar">
           
           <h3 className="text-4xl mb-10">Trabalhamos com:</h3>
 
@@ -412,7 +411,7 @@ export default function Home() {
         </Secao>
 
         <h1 className="m-10">Reparos em Geral</h1>
-        <Secao id="reparos" className="p-15 text-2xl bg-blue-700 rounded w-290 text-white flex flex-col items-center space-y-3">
+        <Secao id="reparos">
 
           <a href="https://wa.me/5547999746021?text=Olá, estou interessado em fazer um orçamento sobre Reparos em Geral" target="_blank" rel="noopener noreferrer"
             className="w-80 h-12 border hover:bg-blue-600 text-3xl font-medium rounded flex items-center justify-center m-5"
