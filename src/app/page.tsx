@@ -2,7 +2,13 @@
 import { BotaoTelefone } from "@/components/grs/button";
 import { MainHeader } from "@/components/grs/header";
 import { Icons } from "@/components/grs/icon";
-import {Alvenaria, ArCondicionado, Drywall, Eletrica, Hidraulica, ReparosGeral,  } from "@/components/grs/section";
+import { Alvenaria } from "@/components/serviços/alvenaria";
+import { Eletrica } from "@/components/serviços/eletrica";
+import { Hidraulica } from "@/components/serviços/hidraulica";
+import { Drywall } from "@/components/serviços/drywall";
+import { ArCondicionado } from "@/components/serviços/ar";
+import { ReparosGeral } from "@/components/serviços/reparos";
+
 
 export default function Home() {
 
@@ -15,7 +21,7 @@ export default function Home() {
 
       <MainHeader/>
 
-      <h3 className="font-semibold mt-15 mb-2 text-3xl">Trabalhamos com:</h3>
+      <h3 className="font-semibold mt-15 mb-2 text-3xl">Nossos Serviços:</h3>
       <Icons/>
 
       <div //Sl
